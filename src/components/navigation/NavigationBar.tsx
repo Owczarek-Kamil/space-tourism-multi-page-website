@@ -6,8 +6,8 @@ import NavigationLinksBar from "./NavigationLinksBar";
 
 export default function NavigationBar() {
   return (
-    <div>
-      <nav className="relative mx-auto flex max-w-layout items-center justify-between p-6 transition-all md:py-0 md:pl-9.75 md:pr-0 3xl:mt-10 4xl:p-0">
+    <div className="p-6 transition-all md:ml-9.75 md:p-0">
+      <nav className="relative mx-auto flex max-w-layout items-center justify-between">
         <Image
           src="/assets/shared/logo.svg"
           alt="Space tourism logo"
