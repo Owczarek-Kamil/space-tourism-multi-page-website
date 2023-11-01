@@ -13,11 +13,23 @@ const config: Config = {
       "color-dark": "hsla(230, 35%, 7%, 1)",
       "color-light-violet": "hsla(231, 77%, 90%, 1)",
       "color-white": "hsla(0, 0%, 100%, 1)",
+      "color-gray": "hsla(231, 15%, 26%, 1)",
+    },
+    screens: {
+      "xsm": "512px",
+      "sm": "640px",
+      "md": "768px",
+      "lg": "896px",
+      "xl": "1024px",
+      "2xl": "1152px",
+      "3xl": "1280px",
+      "4xl": "1440px",
     },
     extend: {
       fontFamily: {
         "bellefair": ["var(--font-bellefair)"],
         "barlow-condensed": ["var(--font-barlow-condensed)"],
+        "barlow": ["var(--font-barlow)"],
       },
       spacing: {
         "0": "0rem",
@@ -421,6 +433,18 @@ const config: Config = {
         "99.5": "24.875rem",
         "99.75": "24.9375rem",
         "100": "25rem",
+      },
+      fontSize: {
+        h1: "9.375rem",
+        h2: "6.25rem",
+        h3: "5rem",
+        h4: "3.5rem",
+        h5: "2rem",
+        h6: "1.75rem",
+        md: ["0.9375rem", "1.6667em"],
+      },
+      maxWidth: {
+        layout: "69.375rem", // 1110px / 16 (1rem)
       },
     },
   },
