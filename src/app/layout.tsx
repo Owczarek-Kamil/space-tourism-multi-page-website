@@ -2,7 +2,8 @@
 
 import "@/styles/globals.css";
 import type { Metadata } from "next";
-import { Bellefair, Barlow_Condensed } from "next/font/google";
+import { Bellefair, Barlow_Condensed, Barlow } from "next/font/google";
+import NavigationBar from "@/components/navigation/NavigationBar";
 
 export const metadata: Metadata = {
   title: "Frontend Mentor | Space tourism website",
@@ -22,13 +23,22 @@ const fontBellefair = Bellefair({
 const fontBarlowCondensed = Barlow_Condensed({
   variable: "--font-barlow-condensed",
   subsets: ["latin"],
+  weight: ["400", "700"],
+});
+
+const fontBarlow = Barlow({
+  variable: "--font-barlow",
+  subsets: ["latin"],
   weight: "400",
 });
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body className={`${fontBellefair.variable} ${fontBarlowCondensed.variable} min-w-[20rem] font-bellefair`}>
+      <body
+        className={`${fontBellefair.variable} ${fontBarlowCondensed.variable} ${fontBarlow.variable} relative flex min-h-screen min-w-[20rem] flex-col overflow-x-hidden bg-color-dark`}
+      >
+        <NavigationBar />
         {children}
       </body>
     </html>
