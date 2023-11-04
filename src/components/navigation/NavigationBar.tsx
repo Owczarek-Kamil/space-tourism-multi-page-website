@@ -6,7 +6,7 @@ import NavigationLinksBar from "./NavigationLinksBar";
 
 export default function NavigationBar() {
   return (
-    <div className="p-6 transition-all md:ml-9.75 md:p-0">
+    <div className="p-6 transition-all md:ml-9.75 md:p-0 3xl:mx-0 3xl:mt-10">
       <nav className="relative mx-auto flex max-w-layout items-center justify-between">
         <Image
           src="/assets/shared/logo.svg"
