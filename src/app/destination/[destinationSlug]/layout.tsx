@@ -7,7 +7,7 @@ export default function DestinationPageLayout({ children }: { children: React.Re
   return (
     <>
       <ContentPageHeader indexNumber="01" title="Pick your destination" />
-      <div className="mx-6 mb-14 mt-3 transition-all md:mx-24.25 md:mt-9.75 3xl:mb-4 3xl:mt-16">{children}</div>
+      <div className="mx-6 mb-14 mt-8 transition-all md:mx-24.25 md:mt-9.75 3xl:mb-4 3xl:mt-16">{children}</div>
 
       <BackgroundImage
         imgSrcMobile="/assets/destination/background-destination-mobile.jpg"

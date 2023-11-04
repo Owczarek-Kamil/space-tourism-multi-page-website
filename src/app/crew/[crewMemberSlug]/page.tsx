@@ -32,7 +32,7 @@ export default function CrewPage({ params: { crewMemberSlug } }: { params: { cre
   return (
     <main className="relative mx-auto flex max-w-layout flex-col 3xl:flex-1">
       <figure
-        className={`relative z-50 mb-8 h-[13.8750rem] border-b border-color-gray transition-all xsm:h-[18.7186rem] sm:h-[23.5625rem] md:order-last md:mb-0 md:mt-auto md:h-[33.2500rem] md:border-b-0 lg:h-[36.0625rem] xl:h-[38.8750rem] 2xl:h-[41.6875rem] 3xl:absolute 3xl:-right-5 3xl:bottom-0 ${finalWidth} ${finalHeight}`}
+        className={`relative mb-8 h-[13.8750rem] border-b border-color-gray transition-all xsm:h-[18.7186rem] sm:h-[23.5625rem] md:order-last md:mb-0 md:mt-auto md:h-[33.2500rem] md:border-b-0 lg:h-[36.0625rem] xl:h-[38.8750rem] 2xl:h-[41.6875rem] 3xl:absolute 3xl:-right-5 3xl:bottom-0 ${finalWidth} ${finalHeight}`}
       >
         <Image
           src={webp}
