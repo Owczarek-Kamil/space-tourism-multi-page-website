@@ -21,11 +21,11 @@ export default function DestinationPage({ params: { destinationSlug } }: { param
   } = destinations[destinationIndex];
 
   return (
-    <main className="mx-auto flex max-w-layout flex-col items-center 3xl:flex-row 3xl:items-start 3xl:gap-39.25">
-      <div className="relative mb-6.5 aspect-square min-h-[13rem] transition-all md:mb-13.25 md:min-h-[18.75rem] 3xl:mt-8.25 3xl:min-h-[27.8125rem]">
-        <Image src={webp} alt={`Picture of the ${name}`} fill priority className="object-contain" />
+    <main className="mx-auto flex max-w-layout flex-col items-center 3xl:flex-row 3xl:items-start 3xl:gap-55">
+      <div className="relative mb-6.5 aspect-square max-h-[27.8125rem] min-h-[13rem] transition-all md:mb-13.25 md:min-h-[18.75rem] 3xl:mt-8.25 3xl:flex-1 3xl:translate-x-15.75">
+        <Image src={webp} alt={`Picture of the ${name}`} fill priority quality={100} className="object-contain" />
       </div>
-      <div className="flex flex-col items-center 3xl:items-start">
+      <div className="flex flex-col items-center 3xl:max-w-[27.8125rem] 3xl:items-start">
         <ul className="mb-6.75 flex items-center gap-4.5 transition-all md:mb-10.75">
           {destinations.map((destination, index) => (
             <li key={destination.name.toLowerCase()} className="relative">
